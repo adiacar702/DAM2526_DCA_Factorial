@@ -38,4 +38,9 @@ public class Factorial {
 
 		return num;
 	}
+
+	private static long factorialBucle(int n) {
+		return n * n;
+		//TODO: crea tu el contenido de esta función... si eres capaz
+	}
 }

@@ -43,4 +43,12 @@ public class Factorial {
 		return n * n;
 		//TODO: crea tu el contenido de esta función... si eres capaz
 	}
+
+	private static long factorialRec(int n) {
+		if (n == 0 || n == 1) {
+			return 1;
+		}
+
+		return n * factorialRec(n - 1);
+	}
 }

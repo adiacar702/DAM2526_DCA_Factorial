@@ -1,0 +1,58 @@
+    1  history -w
+    2  cd eclipse-workspace
+    3  cd DiazCardenasAdrian_Factorial/
+    4  git init
+    5  git branch -M main
+    6  git remote add origin https://github.com/adiacar702/DAM2526_DCA_Factorial.git
+    7  git add src/controlVersiones/Factorial.java 
+    8  git commit -m "A: version inicial"
+    9  git push -u origin main 
+   10  git add src/controlVersiones/Factorial.java 
+   11  git commit -m "B: Eliminado Scanner sc, Agregado funcion pedirNumero()"
+   12  git push 
+   13  git commit -m "C: Agregado println en la linea 17"
+   14  git add src/controlVersiones/Factorial.java 
+   15  git commit -m "C: Agregado println en la linea 17"
+   16  git push 
+   17  git branch factorial_recursivo
+   18  git switch factorial_recursivo 
+   19  git add src/controlVersiones/Factorial.java 
+   20  git commit -m "F1: agregado funcion factorialRec"
+   21  git add src/controlVersiones/Factorial.java 
+   22  git commit -m "F2: modificada linea 17 para agregar la funcion factorialRec"
+   23  git add src/controlVersiones/Factorial.java 
+   24  git commit -m "F3: añadido documentacion del funcionamiento de la funcion factorialRec en las lineas 27-32"
+   25  git log --oneline --graph 
+   26  git switch main 
+   27  git push 
+   28  git add src/controlVersiones/Factorial.java 
+   29  git commit -m "D: modificacion de la funcion pedirNumero"
+   30  git push 
+   31  git add src/controlVersiones/Factorial.java 
+   32  git commit -m "E: agregada funcion factorialBucle"
+   33  git add src/controlVersiones/Factorial.java 
+   34  git commit -m "F: modificada linea 17 para añadir la funcion factorialBucle"
+   35  git log --oneline --graph 
+   36  git push 
+   37  git log --graph  
+   38  git log  
+   39  git log  --oneline 
+   40  git log --oneline --graph 
+   41  git switch factorial_recursivo 
+   42  git rebase main 
+   43  git add src/controlVersiones/Factorial.java 
+   44  git rebase --continue 
+   45  git push 
+   46  git log --oneline --graph 
+   47  git switch main 
+   48  git push 
+   49  git push origin factorial_recursivo 
+   50  git switch factorial_recursivo 
+   51  git add src/controlVersiones/Factorial.java 
+   52  git commit -m "F4: agregada en la linea 19 println"
+   53  git push
+   54  git push origin factorial_recursivo 
+   55  git switch main 
+   56  git merge factorial_recursivo 
+   57  git push
+   58  history > DCA_FactorialComandos.txt

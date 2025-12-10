@@ -46,6 +46,12 @@ public class Factorial {
 		//TODO: crea tu el contenido de esta función... si eres capaz
 	}
 
+	/**
+	 * Calcula el factorial de un número utilizando un enfoque recursivo.
+	 *
+	 * @param n Número entero del que se quiere obtener el factorial.
+	 * @return Factorial de n, calculado mediante recursividad.
+	 */
 	private static long factorialRec(int n) {
 		if (n == 0 || n == 1) {
 			return 1;
